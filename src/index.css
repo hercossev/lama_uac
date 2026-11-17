@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 150 20% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 20% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 20% 12%;
+    --primary: 148 43% 25%;
+    --primary-foreground: 40 33% 98%;
+    --secondary: 38 38% 94%;
+    --secondary-foreground: 150 20% 15%;
+    --accent: 26 55% 51%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 38 25% 93%;
+    --muted-foreground: 150 8% 36%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 38 18% 86%;
+    --input: 38 18% 82%;
+    --ring: 148 43% 25%;
+    --radius: 0.6rem;
+  }
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  h1, h2, h3, h4 { @apply font-serif tracking-tight; }
+}
+
+@layer components {
+  .prose-lama p { @apply mb-4 leading-relaxed text-foreground/85; }
+  .prose-lama ul { @apply mb-4 list-disc space-y-2 pl-5 text-foreground/85; }
+  .section { @apply py-14 md:py-20; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent; }
+}
