@@ -37,3 +37,8 @@
   .section { @apply py-14 md:py-20; }
   .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent; }
 }
+
+@keyframes defilement {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.625rem)); }
+}

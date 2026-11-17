@@ -6,7 +6,7 @@ import { NewsCard } from "@/components/shared/NewsCard";
 import { actualites } from "@/data/actualites";
 import { projets } from "@/data/projets";
 import { thematiques } from "@/data/thematiques";
-import { partenaires } from "@/data/partenaires";
+import { PartnerMarquee } from "@/components/shared/PartnerMarquee";
 import { chiffres } from "@/data/travaux";
 import { siteInfo } from "@/data/site";
 import { HeroCarousel, type Slide } from "@/components/shared/HeroCarousel";
@@ -175,9 +175,10 @@ export default function Accueil() {
       <section className="border-y bg-card py-12">
         <div className="container">
           <p className="eyebrow mb-6 text-center">Ils travaillent avec nous</p>
-          <ul className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-center text-sm font-medium text-foreground/70">
-            {partenaires.map((p) => <li key={p.nom}>{p.nom}</li>)}
-          </ul>
+          <PartnerMarquee />
+          <p className="mt-6 text-center">
+            <Link to="/a-propos/partenaires" className="text-sm font-medium text-primary hover:underline">Voir tous nos partenaires</Link>
+          </p>
         </div>
       </section>
 

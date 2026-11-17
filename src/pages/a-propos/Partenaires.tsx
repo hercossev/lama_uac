@@ -15,7 +15,11 @@ export default function Partenaires() {
             const Icon = icones[p.type];
             return (
               <div key={p.nom} className="flex gap-4 rounded-lg border bg-card p-5">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary"><Icon className="h-5 w-5" /></span>
+                {p.logo ? (
+                  <span className="flex h-14 w-20 shrink-0 items-center justify-center rounded-md border bg-white p-1.5"><img src={p.logo} alt="" className="max-h-full max-w-full object-contain" /></span>
+                ) : (
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary"><Icon className="h-5 w-5" /></span>
+                )}
                 <div>
                   <h2 className="font-sans text-base font-semibold">{p.nom}</h2>
                   <p className="text-xs text-muted-foreground">{p.pays} · {p.type}</p>
