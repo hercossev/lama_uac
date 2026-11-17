@@ -1,7 +1,6 @@
 import { BookOpen, GraduationCap, Microscope, Users } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 
 const offres = [
   {
@@ -51,12 +50,6 @@ export default function Catalogue() {
           <img src="/images/master-conference-inaugurale.jpg" alt="Conférence inaugurale du Master Sociologie et anthropologie de la santé" className="w-full object-cover" />
           <figcaption className="bg-card p-3 text-sm text-muted-foreground">Conférence inaugurale du Master Sociologie et anthropologie de la santé, Université d'Abomey-Calavi.</figcaption>
         </figure>
-        <div className="mt-8">
-          <ToComplete>
-            Pour chaque formation : conditions d'admission, durée, contenu des unités d'enseignement, frais, calendrier des inscriptions
-            et contact. Ajouter aussi les formations courtes ou certifiantes si le LAMA en propose.
-          </ToComplete>
-        </div>
       </SectionLayout>
     </>
   );

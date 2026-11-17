@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { Badge } from "@/components/ui/badge";
 import { projets, type Projet } from "@/data/projets";
 import { cn } from "@/lib/utils";
 
-const filtres: ("Tous" | Projet["statut"])[] = ["Tous", "En cours", "Achevé", "À confirmer"];
+const filtres: ("Tous" | NonNullable<Projet["statut"]>)[] = ["Tous", "En cours", "Achevé"];
 
 export default function Projets() {
   const [filtre, setFiltre] = useState<(typeof filtres)[number]>("Tous");
@@ -39,7 +38,7 @@ export default function Projets() {
               )}
               <div className="p-5">
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant={p.statut === "En cours" ? "default" : "secondary"}>{p.statut}</Badge>
+                  {p.statut && <Badge variant={p.statut === "En cours" ? "default" : "secondary"}>{p.statut}</Badge>}
                   <Badge variant="outline">{p.periode}</Badge>
                   {p.envergure && <Badge variant="accent">{p.envergure}</Badge>}
                 </div>
@@ -52,12 +51,6 @@ export default function Projets() {
               </div>
             </article>
           ))}
-        </div>
-        <div className="mt-8">
-          <ToComplete>
-            Les statuts « À confirmer » correspondent à des projets dont la date de fin est passée ou dont le suivi n'est pas documenté.
-            Merci de préciser leur état et d'ajouter les projets récents.
-          </ToComplete>
         </div>
       </SectionLayout>
     </>

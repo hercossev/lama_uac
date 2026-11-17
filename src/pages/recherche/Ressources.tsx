@@ -1,7 +1,6 @@
-import { BookMarked, FileText, GraduationCap } from "lucide-react";
+import { BookMarked, GraduationCap } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { Badge } from "@/components/ui/badge";
 import { chiffres, masters, theses } from "@/data/travaux";
 
@@ -54,15 +53,6 @@ export default function Ressources() {
             </li>
           ))}
         </ul>
-
-        <h2 className="mt-12 flex items-center gap-2 text-2xl font-semibold"><FileText className="h-6 w-6 text-accent" /> Documents et données</h2>
-        <div className="mt-6">
-          <ToComplete>
-            Ajouter ici les documents à télécharger (rapports d'activités, guides méthodologiques, bases de données ouvertes, supports
-            de séminaires) et préciser ceux qui peuvent être rendus publics. Le règlement intérieur transmis est un projet : il n'a pas
-            été publié.
-          </ToComplete>
-        </div>
       </SectionLayout>
     </>
   );

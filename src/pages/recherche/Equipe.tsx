@@ -1,7 +1,6 @@
 import { User } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { assistants, membres } from "@/data/equipe";
 
 export default function Equipe() {
@@ -37,12 +36,6 @@ export default function Equipe() {
               </ul>
             </div>
           ))}
-        </div>
-        <div className="mt-8">
-          <ToComplete>
-            Ajouter une photo, une courte biographie et éventuellement un lien (ORCID, Google Scholar) pour chaque membre. Les numéros
-            de téléphone personnels de la liste des assistants n'ont volontairement pas été publiés.
-          </ToComplete>
         </div>
       </SectionLayout>
     </>

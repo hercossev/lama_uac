@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import { ExternalLink, Mic, Search } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { communications, publications } from "@/data/publications";
@@ -52,9 +51,6 @@ export default function Publications() {
             </li>
           ))}
         </ul>
-        <div className="mt-8">
-          <ToComplete>Ajouter les publications parues après 2023 et les ouvrages ou chapitres d'ouvrages des membres.</ToComplete>
-        </div>
       </SectionLayout>
     </>
   );

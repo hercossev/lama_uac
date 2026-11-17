@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, BriefcaseBusiness, GraduationCap, Handshake, UserPlus } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionTitle } from "@/components/layout/SectionTitle";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { Button } from "@/components/ui/button";
 import { actualites } from "@/data/actualites";
 import { siteInfo } from "@/data/site";
@@ -84,10 +83,6 @@ export default function NousRejoindre() {
           </div>
           <div className="space-y-6">
             <img src="/images/resford-equipe-mairie.jpg" alt="Équipe du LAMA lors d'une mission de terrain" className="aspect-[4/3] w-full rounded-lg object-cover" />
-            <ToComplete>
-              Préciser les pièces à fournir pour une demande de rattachement (CV, lettre, projet de recherche…) et l'éventuelle adresse
-              dédiée aux candidatures.
-            </ToComplete>
           </div>
         </div>
       </section>

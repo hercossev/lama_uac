@@ -45,22 +45,9 @@ Les photos et logos sont dans `public/images/`.
 - Formation : Catalogue des formations, Programmes de bourse
 - Laboratoire, Actualités (+ page par article), Nous rejoindre, Contact
 
-## Contenus à compléter (encadrés orange en pointillés sur le site)
+## Contenus à compléter
 
-- **Nos valeurs** : aucune charte dans les documents ; principes proposés à partir des textes du LAMA, à valider.
-- **Notre histoire** : période 2014-2019 et contexte de création.
-- **Direction / Équipe** : confirmer que la composition 2021-2023 est à jour ; photos et biographies.
-- **Nos départements** : le LAMA a 3 équipes de recherche (règlement intérieur) ; chefs d'équipe et membres à préciser.
-- **Partenaires** : logos officiels en haute définition ; préciser le lien avec l'Institut Pasteur (photos sans légende).
-- **Publications** : publications après 2023.
-- **Projets** : statut des projets marqués « À confirmer ».
-- **Catalogue des formations** : admission, durée, contenu, frais, calendrier.
-- **Programmes de bourse** : bourses actuellement ouvertes.
-- **Ressources et données** : documents publics à télécharger.
-- **Laboratoire** : légendes des photos (cérémonie, réunions, Institut Pasteur).
-- **Contact** : courriel officiel du labo (actuellement celui du directeur), téléphone (repris de l'attestation IFU 2024, format à 10 chiffres à vérifier), bureau et horaires.
-- **Actualités** : dates « Octobre 2026 » et « Septembre 2026 » déduites des fichiers, à confirmer.
-- **Slogan d'accueil** « Comprendre les sociétés pour mieux soigner » : proposition, à valider.
+La liste des informations à fournir par le LAMA est dans le document séparé `LAMA_Site_Informations_a_fournir.pdf`. Le site ne contient plus aucun encadré « à compléter ».
 
 ## Choix éditoriaux
 

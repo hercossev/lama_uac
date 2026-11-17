@@ -1,6 +1,5 @@
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 
 // Les principes ci-dessous sont repris des textes du LAMA (description et rapport d'activités).
 // Ils ne constituent pas une charte de valeurs officielle : à valider ou remplacer par le LAMA.
@@ -18,10 +17,6 @@ export default function Valeurs() {
     <>
       <PageHeader title="Nos valeurs" crumbs={[{ label: "À propos", href: "/a-propos" }, { label: "Nos valeurs" }]} intro="Les principes qui orientent les recherches et les formations du LAMA." />
       <SectionLayout section="/a-propos">
-        <ToComplete title="Texte officiel des valeurs à fournir">
-          Les documents transmis ne contiennent pas de charte de valeurs. Les principes ci-dessous sont tirés de la description du
-          laboratoire et de son rapport d'activités. Merci de les valider, les reformuler ou les remplacer.
-        </ToComplete>
         <div className="mt-8 grid gap-5 sm:grid-cols-2">
           {principes.map((p) => (
             <div key={p.titre} className="rounded-lg border-l-4 border-l-accent bg-card p-6 shadow-sm">

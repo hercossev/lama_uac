@@ -2,7 +2,6 @@ import { Building, CalendarCheck, Landmark, MapPin } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionTitle } from "@/components/layout/SectionTitle";
 import { Gallery } from "@/components/layout/Gallery";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { siteInfo } from "@/data/site";
 
 const fiche = [
@@ -103,12 +102,6 @@ export default function Laboratoire() {
         <div className="container">
           <SectionTitle eyebrow="En images" title="La vie du laboratoire" />
           <Gallery images={photos} alt="Activités du LAMA" />
-          <div className="mt-6">
-            <ToComplete>
-              Ajouter des légendes à ces photos (événement, lieu, date) et, si possible, des photos des locaux et équipements du
-              laboratoire.
-            </ToComplete>
-          </div>
         </div>
       </section>
     </>

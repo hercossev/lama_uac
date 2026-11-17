@@ -2,7 +2,6 @@ import { Plane, Award, Globe2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { Badge } from "@/components/ui/badge";
 
 const programmes = [
@@ -53,12 +52,6 @@ export default function Bourses() {
               </div>
             </article>
           ))}
-        </div>
-        <div className="mt-8">
-          <ToComplete>
-            Indiquer les bourses ouvertes actuellement (critères d'éligibilité, montant, calendrier, modalités de candidature) et
-            confirmer les programmes ci-dessus qui sont toujours actifs.
-          </ToComplete>
         </div>
       </SectionLayout>
     </>

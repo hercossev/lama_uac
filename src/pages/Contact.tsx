@@ -1,7 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -45,10 +44,6 @@ export default function Contact() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-            <ToComplete>
-              Confirmer le numéro de téléphone (repris de l'attestation d'immatriculation, peut-être à passer au format à 10 chiffres),
-              l'adresse électronique officielle du laboratoire, le bureau ou bâtiment exact sur le campus et les horaires d'accueil.
-            </ToComplete>
           </div>
 
           <form onSubmit={onSubmit} className="space-y-5 rounded-lg border bg-card p-6 md:p-8">

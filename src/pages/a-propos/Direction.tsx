@@ -1,7 +1,6 @@
 import { User } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { direction } from "@/data/equipe";
 
 const instances = [
@@ -40,12 +39,6 @@ export default function Direction() {
               <p className="mt-1 text-sm text-muted-foreground">{m.grade} · {m.specialite}</p>
             </div>
           ))}
-        </div>
-        <div className="mt-6">
-          <ToComplete>
-            Composition reprise de la fiche statistique 2021-2023 : merci de confirmer qu'elle est à jour et de fournir une photo
-            officielle de chaque membre (format portrait).
-          </ToComplete>
         </div>
 
         <h2 className="mt-12 text-2xl font-semibold">Instances du laboratoire</h2>

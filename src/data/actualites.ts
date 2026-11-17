@@ -1,5 +1,4 @@
-// Articles rédigés par le LAMA (dossier source). Les dates « mois » des articles 2 et 3 sont déduites
-// de la date des photos et fichiers : à confirmer.
+// Articles rédigés par le LAMA (dossier source).
 export type Actualite = {
   slug: string;
   titre: string;

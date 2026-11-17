@@ -48,9 +48,8 @@ export const siteInfo = {
   ecoleDoctorale: "École Doctorale Pluridisciplinaire « Espaces, Cultures et Développement »",
   arrete: "Arrêté n° 1236-14/UAC/FLASH/D/VD/SGE du 21 novembre 2014",
   adresse: ["Université d'Abomey-Calavi", "Quartier Zogbadjè", "Abomey-Calavi, Bénin"],
-  // Numéro figurant sur l'attestation d'immatriculation (2024). À confirmer (format à 10 chiffres).
-  telephone: "+229 95 06 13 35",
-  telephoneHref: "tel:+22995061335",
+  telephone: "+229 01 95 06 13 35",
+  telephoneHref: "tel:+2290195061335",
   // Adresse du directeur scientifique publiée dans les appels du LAMA. Remplacer par l'adresse officielle du laboratoire si elle existe.
   email: "roch.houngnihin@uac.bj",
   vision:

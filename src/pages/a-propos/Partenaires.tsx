@@ -1,7 +1,6 @@
 import { Building2, FlaskConical, HandCoins } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { partenaires } from "@/data/partenaires";
 
 const icones = { Académique: Building2, Recherche: FlaskConical, Financement: HandCoins } as const;
@@ -25,13 +24,6 @@ export default function Partenaires() {
               </div>
             );
           })}
-        </div>
-        <div className="mt-8">
-          <ToComplete>
-            Ajouter les logos officiels des partenaires en haute définition (ceux du dossier sont trop petits pour le web) et confirmer
-            les partenariats en cours. Le Pr Houngnihin siège au comité d'éthique de l'Institut Pasteur (Paris) : préciser si les photos prises à
-            l'Institut Pasteur relèvent de ce rôle ou d'un partenariat du laboratoire.
-          </ToComplete>
         </div>
       </SectionLayout>
     </>

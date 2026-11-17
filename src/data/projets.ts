@@ -4,7 +4,7 @@ export type Projet = {
   titre: string;
   objectif: string;
   periode: string;
-  statut: "En cours" | "Achevé" | "À confirmer";
+  statut?: "En cours" | "Achevé";
   envergure?: string;
   partenaires: string;
   domaine: string;
@@ -64,7 +64,6 @@ export const projets: Projet[] = [
     objectif:
       "Proposer des pistes durables, objectives et efficientes de valorisation de plantes de la médecine traditionnelle contre le diabète et les infections bactériennes, à partir du cas d'Uvaria chamae.",
     periode: "2022 – 2025",
-    statut: "À confirmer",
     envergure: "Internationale",
     partenaires: "Louvain Drug Research Institute (LDRI), Pharmacognosy Research Group (GNOS)",
     domaine: "Sciences biomédicales et pharmaceutiques",
@@ -74,7 +73,6 @@ export const projets: Projet[] = [
     titre: "CORAFBEN – Médias, interprétations, effets sociaux face à la pandémie de COVID-19 (Bénin)",
     objectif: "Analyser la COVID-19 et les médias à travers les logiques et pratiques sociales de prise en charge au Bénin.",
     periode: "2021 – 2025",
-    statut: "À confirmer",
     envergure: "Régionale",
     partenaires: "Institut de recherche pour le développement (IRD)",
     domaine: "Sciences de l'homme et de la société",
@@ -104,7 +102,6 @@ export const projets: Projet[] = [
     titre: "Analyse anthropologique des envenimations dans le Couffo",
     objectif: "Bourse complète de recherche en anthropologie de la santé pour une analyse anthropologique des envenimations dans le département du Couffo.",
     periode: "2020 – 2025",
-    statut: "À confirmer",
     envergure: "Nationale",
     partenaires: "The Couffo Collaborative",
     domaine: "Sciences de l'homme et de la société",

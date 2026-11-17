@@ -1,6 +1,5 @@
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 
 const jalons = [
   { date: "21 novembre 2014", titre: "Création du LAMA", texte: "Le laboratoire est créé par l'arrêté décanal n° 1236-14/UAC/FLASH/D/VD/SGE, au sein du Département de Sociologie-Anthropologie de l'Université d'Abomey-Calavi." },
@@ -30,13 +29,6 @@ export default function Histoire() {
             </li>
           ))}
         </ol>
-        <div className="mt-10">
-          <ToComplete>
-            Les documents disponibles ne racontent pas la période 2014-2019 ni le contexte de la création (fondateurs, premiers projets).
-            Le Pr Codjo Adolphe Kpatchavi figure comme directeur scientifique honoraire : son rôle dans la fondation du laboratoire reste à
-            préciser.
-          </ToComplete>
-        </div>
       </SectionLayout>
     </>
   );

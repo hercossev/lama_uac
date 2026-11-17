@@ -9,6 +9,43 @@ import { thematiques } from "@/data/thematiques";
 import { partenaires } from "@/data/partenaires";
 import { chiffres } from "@/data/travaux";
 import { siteInfo } from "@/data/site";
+import { HeroCarousel, type Slide } from "@/components/shared/HeroCarousel";
+
+const slides: Slide[] = [
+  {
+    image: "/images/resford-mission-terrain-ketou.jpg",
+    alt: "Chercheurs du LAMA en mission de terrain",
+    surtitre: "Université d'Abomey-Calavi · Bénin",
+    titre: "Comprendre les sociétés pour mieux soigner",
+    texte: `Le ${siteInfo.nom} étudie les dimensions sociales, culturelles, économiques, politiques et symboliques de la santé, de la maladie et des soins.`,
+    actions: [
+      { label: "Découvrir nos recherches", href: "/recherche", variant: "accent" },
+      { label: "Qui sommes-nous ?", href: "/a-propos" },
+    ],
+  },
+  {
+    image: "/images/resford-entretien-communaute.jpg",
+    alt: "Échange entre chercheurs et détenteurs de savoirs endogènes",
+    surtitre: "Savoirs endogènes et patrimoine bioculturel",
+    titre: "Les savoirs des communautés au cœur de nos recherches",
+    texte: "Médecines traditionnelles, pharmacopées africaines, essences forestières : de Kétou à Lokossa, nos chercheurs travaillent avec les communautés et les détenteurs de savoirs.",
+    actions: [
+      { label: "Nos thématiques", href: "/recherche/thematiques", variant: "accent" },
+      { label: "Le programme RESFORD", href: "/actualites/uac-uliege-programme-resford" },
+    ],
+  },
+  {
+    image: "/images/afya-moja-delegation.jpg",
+    alt: "Étudiants du LAMA en mobilité à l'Université de Naples Federico II",
+    surtitre: "Formation et mobilité internationale",
+    titre: "Former la nouvelle génération de chercheurs en santé",
+    texte: "Du master au doctorat, en lien avec Naples, Liège et nos partenaires internationaux, le LAMA forme à la recherche qualitative en anthropologie de la santé.",
+    actions: [
+      { label: "Nos formations", href: "/formation/catalogue", variant: "accent" },
+      { label: "Programmes de bourse", href: "/formation/bourses" },
+    ],
+  },
+];
 
 const chiffresCles = [
   { valeur: "2014", label: "Année de création du laboratoire" },
@@ -27,25 +64,9 @@ export default function Accueil() {
   const projetsPhares = projets.filter((p) => ["empower", "resford", "afya-moja"].includes(p.slug));
   return (
     <>
-      {/* Bandeau principal */}
-      <section className="relative isolate overflow-hidden bg-lama-vert-fonce text-white">
-        <img src="/images/resford-mission-terrain-ketou.jpg" alt="Équipe du LAMA en mission de terrain" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-40" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-lama-vert-fonce via-lama-vert-fonce/85 to-transparent" />
-        <div className="container py-20 md:py-32">
-          <p className="eyebrow text-[#E9A877]">Université d'Abomey-Calavi · Bénin</p>
-          <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
-            Comprendre les sociétés pour mieux soigner
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/85">
-            Le {siteInfo.nom} (LAMA) étudie les dimensions sociales, culturelles, économiques, politiques et symboliques de la
-            santé, de la maladie et des soins.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg" variant="accent"><Link to="/recherche">Découvrir nos recherches <ArrowRight /></Link></Button>
-            <Button asChild size="lg" variant="light"><Link to="/a-propos">Qui sommes-nous ?</Link></Button>
-          </div>
-        </div>
-      </section>
+      {/* Carrousel d'accueil */}
+      <h1 className="sr-only">{siteInfo.nom} (LAMA) – Université d'Abomey-Calavi</h1>
+      <HeroCarousel slides={slides} />
 
       {/* Chiffres clés */}
       <section className="border-b bg-card">
@@ -127,7 +148,7 @@ export default function Accueil() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {projetsPhares.map((p) => (
               <div key={p.slug} className="flex flex-col rounded-lg bg-white/5 p-6 ring-1 ring-white/15">
-                <p className="text-xs uppercase tracking-wider text-white/60">{p.periode} · {p.statut}</p>
+                <p className="text-xs uppercase tracking-wider text-white/60">{p.periode}{p.statut ? ` · ${p.statut}` : ""}</p>
                 <h3 className="mt-2 text-lg font-semibold leading-snug">{p.titre}</h3>
                 <p className="mt-3 line-clamp-4 text-sm text-white/75">{p.objectif}</p>
               </div>

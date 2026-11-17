@@ -1,6 +1,5 @@
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionLayout } from "@/components/layout/SectionLayout";
-import { ToComplete } from "@/components/layout/ToComplete";
 import { equipesRecherche } from "@/data/equipe";
 
 export default function Departements() {
@@ -29,12 +28,6 @@ export default function Departements() {
               </div>
             </article>
           ))}
-        </div>
-        <div className="mt-8">
-          <ToComplete>
-            Les noms des chefs d'équipe et les membres de chaque équipe ne figurent pas dans les documents. Les descriptions et exemples
-            ont été rédigés à partir des thèmes de recherche du laboratoire : merci de les valider.
-          </ToComplete>
         </div>
       </SectionLayout>
     </>
